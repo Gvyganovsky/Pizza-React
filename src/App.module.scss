@@ -7,6 +7,19 @@
   font-family: 'Proxima Nova';
 }
 
+body {
+  background-color: #FFDF8C;
+}
+
+.app {
+  max-width: 1340px;
+  border-radius: 10px;
+  background-color: #FFF;
+  box-shadow: 0px 15px 20px 0px rgba(0, 0, 0, 0.03);
+  margin: 52px auto;
+  padding: 40px 35px;
+}
+
 @font-face {
   font-family: 'Proxima Nova';
   src: url('./fonts/proximanova_regular.woff2') format('woff2');

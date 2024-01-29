@@ -3,14 +3,26 @@ import styles from './Header.module.scss';
 const Header = () => {
     return (
         <header className={styles.header}>
-            <div className={styles.logoblock}>
-                <img src="./public/logo.svg" alt="logo" className={styles.logo} />
-                <h1>REACT PIZZA</h1>
-                <p>Cамая вкусная пицца во вселенной</p>
+            <div className={styles.header__logoblock}>
+                <img
+                    src='./logo.svg'
+                    alt='logo'
+                    width={38}
+                    height={38}
+                    className={styles.header__logo}
+                />
+                <h1 className={styles.header__title}>REACT PIZZA</h1>
+                <p className={styles.header__text}>Cамая вкусная пицца во вселенной</p>
             </div>
-            <button>
-                <span>520 ₽</span>
-                <img src="" alt="" />
+            <button type='button' className={styles.header__btn}>
+                <span className={styles.line}>520 ₽</span>
+                <img
+                    src="./basket.svg"
+                    alt="basket"
+                    width={16}
+                    height={16}
+                    className={styles.header__basket}
+                />
                 3
             </button>
         </header>
