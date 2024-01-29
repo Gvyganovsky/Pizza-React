@@ -1,11 +1,28 @@
 import styles from './App.module.scss';
-import Header from './components/Header/'
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Home from './Pages/Home';
+import Basket from './Pages/Basket';
+import Header from './components/Header';
 
 function App() {
   return (
     <div className={styles.app}>
       <Header />
-    </div>
+      <Routes>
+        <Route
+          path='/'
+          element={
+            <Home />
+          }
+        />
+        <Route
+          path='/basket'
+          element={
+            <Basket />
+          }
+        />
+      </Routes>
+    </div >
   )
 }
 

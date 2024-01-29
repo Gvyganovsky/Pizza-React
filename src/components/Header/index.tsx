@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import styles from './Header.module.scss';
 
 const Header = () => {
@@ -14,7 +15,7 @@ const Header = () => {
                 <h1 className={styles.header__title}>REACT PIZZA</h1>
                 <p className={styles.header__text}>Cамая вкусная пицца во вселенной</p>
             </div>
-            <button type='button' className={styles.header__btn}>
+            <Link to='/basket' className={styles.header__btn}>
                 <span className={styles.line}>520 ₽</span>
                 <img
                     src="./basket.svg"
@@ -24,7 +25,7 @@ const Header = () => {
                     className={styles.header__basket}
                 />
                 3
-            </button>
+            </Link>
         </header>
     )
 }
