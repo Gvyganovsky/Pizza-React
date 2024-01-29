@@ -4,7 +4,7 @@ import styles from './Header.module.scss';
 const Header = () => {
     return (
         <header className={styles.header}>
-            <div className={styles.header__logoblock}>
+            <Link to='/' className={styles.header__logoblock}>
                 <img
                     src='./logo.svg'
                     alt='logo'
@@ -14,7 +14,7 @@ const Header = () => {
                 />
                 <h1 className={styles.header__title}>REACT PIZZA</h1>
                 <p className={styles.header__text}>Cамая вкусная пицца во вселенной</p>
-            </div>
+            </Link>
             <Link to='/basket' className={styles.header__btn}>
                 <span className={styles.line}>520 ₽</span>
                 <img

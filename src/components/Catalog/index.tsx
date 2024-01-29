@@ -29,7 +29,7 @@ const Catalog = () => {
                     <p className={styles.search__text}>
                         Сортировка по:
                     </p>
-                    <select className={styles.search__select}>
+                    <select title='category' className={styles.search__select}>
                         <option className={styles.search__option}>
                             популярности
                         </option>
@@ -49,6 +49,21 @@ const Catalog = () => {
                 <Product />
             </ul>
         </section>
+        // <h2>
+        //     Корзина пустая 
+        // </h2>
+        // <p>
+        //     Вероятней всего, вы не заказывали ещё пиццу. 
+        //     Для того, чтобы заказать пиццу, перейди на главную страницу.
+        // </p>
+        // <img 
+        // src="" 
+        // alt="" 
+
+
+
+        // />
+        // <button>Вернуться назад</button>
     )
 }
 
